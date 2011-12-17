@@ -12,5 +12,3 @@ waveforms for illustration purposes. Depending on the quality of
 the signal, you might need to adjust the noise filter logic. I 
 haven't yet figured out a formula that works in all cases. Pass
 .pm3 filename as first argument.
-
-hani.mustafa@gmail.com
