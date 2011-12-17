@@ -1,0 +1,16 @@
+Python tools to inspect .pm3 files produced by Proxmark3's. These
+tools now support decoding and cloning HID proximity cards.
+
+clone_hid.py: Copy an HID Prox II card, by producing commands
+that you can write directly into an AGC reader. Pass the digits
+on the back of the card as the first argument. Haven't figured
+out the even/odd parity bit calculations yet, so you might have
+to hardcode them manually in (hid.py)
+
+decode_hid.py: Decode raw pm3 files, and produce png files of
+waveforms for illustration purposes. Depending on the quality of
+the signal, you might need to adjust the noise filter logic. I 
+haven't yet figured out a formula that works in all cases. Pass
+.pm3 filename as first argument.
+
+hani.mustafa@gmail.com
